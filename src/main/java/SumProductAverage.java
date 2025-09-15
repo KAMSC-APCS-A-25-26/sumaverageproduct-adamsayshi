@@ -15,8 +15,39 @@
 
 import java.util.Scanner;
 
+
 public class SumProductAverage {
     public static void main(String[] args) {
         // TODO
+        //Signature
+        System.out.println("Adam Sagin\nArithmetic Program\n");
+
+
+        //Declare the scanner
+        Scanner sc = new Scanner(System.in);
+
+
+        //Find number of runs
+        System.out.println("Enter number of runs:  ");
+        int runs = sc.nextInt();
+
+
+        //Repeat for number of runs
+        while (runs-- > 0) {
+            //Declare and initialize the 3 user inputs
+            System.out.println("Enter 3 numbers:");
+            double a, b, c;
+            a = sc.nextDouble();
+            b = sc.nextDouble();
+            c = sc.nextDouble();
+
+
+            //Print out the sum, difference, product, and average
+            System.out.println("The sum is " + (a + b + c));
+            System.out.println("The product is " + (a * b * c));
+            System.out.println("The average is " + (a + b + c) / 3 + "\n");
+        }
+
+
     }
 }
